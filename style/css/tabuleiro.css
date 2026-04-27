@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+.pontos {
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+
+.barra-dos-jogadores {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 120px repeat(20, 1fr);
+    place-items: center;
+    width: 960px;
+    height: 55px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgb(53, 51, 51);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: aliceblue;
+}
+
+.barra-dos-jogadores p {
+    font-size: 19px;
+    font-family: 'Roboto', Tahoma, sans-serif;
+    margin-left: 0 auto;
+    text-align: left;
+    user-select: none;
+}
+
+.imagem-da-barra-dos-jogadores {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 620px;
+    border: solid rgb(73, 41, 41) 7px;
+    height: 620px;
+    margin: 10px auto;
+    background-color: rgb(0, 0, 0);
+    user-select: none; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.casa-preta {
+    background-color: rgb(122, 105, 96);
+}
+
+.casa-branca {
+    background-color: rgb(224, 222, 185);
+}
+
+.casa-branca,
+.casa-preta {
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    position: relative;
+}
+
+.casa-branca .numero, .casa-preta .numero {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 55px;
+    margin-right: 60px;
+    pointer-events: none;
+    user-select: none; 
+}
+
+.casa-branca .letra, .casa-preta .letra {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 60px;
+    pointer-events: none;
+    user-select: none; 
+}
+
+.casa-selecionada {
+    background-color: rgb(202, 171, 29);
+}
+
+.casa-origem {
+    background-color: rgb(194, 162, 19);
+}
+
+.casa-destino {
+    background-color: rgb(207, 172, 13);
+}
+
+.movimento-possivel::after {
+    content: "";
+    height: 30%;
+    width: 30%;
+    background-color: rgb(211, 179, 37);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.captura::after {
+    content: "";
+    height: 82%;
+    width: 82%;
+    background-color: none;
+    border: solid rgb(211, 179, 37) 5px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Pecas-de-Xadrez {
+    width: 70px;
+    height: 70px;
+    pointer-events: none;
+    user-select: none; 
+}
+
+.Promocao-Container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.Promocao-Content {
+    position: absolute;
+    place-items: center;
+    display: grid;
+    width: 500px;
+    height: 140px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: rgb(112, 108, 108);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Promocao-Content img {
+    width: 90px;
+    height: 90px;
+}
+
+.Promocao-Content button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Container-de-Opcoes {
+    width: 270px;
+    height: 620px;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    user-select: none; 
+    background-color: rgb(53, 51, 51);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: 90px 300px 90 90px;
+    place-items: center;
+}
+
+.Container-de-Opcoes button {
+    width: 60px;
+    height: 55px;
+    grid-row: 4;
+    border: none;
+    border-radius: 5px;
+    background-color: #dfa301;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#botoes {
+    grid-row: span 1;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.Container-de-Opcoes button:disabled {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.Container-de-Opcoes button:disabled:hover {
+    background-color: rgb(110, 110, 110);
+    opacity: 0.5;
+}
+
+.Container-de-Opcoes button:hover {
+    background-color: #e08823;
+}
+
+#Antes img, #Depois img {
+    width: 25px;
+    height: 25px;
+}
+
+.Container-de-Opcoes button img {
+    width: 40px;
+    height: 40px;
+}
+
+.Container-Tabuleiro-opcoes {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 640px, 260px;
+    grid-template-rows: 1fr;
+    margin: 10px auto;
+    align-items: center;
+    place-items: center;
+}
+
+.container-de-movimentos {
+    grid-column: span 3;
+    grid-row: 2 / 3;
+    width: 230px;
+    height: 230px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}

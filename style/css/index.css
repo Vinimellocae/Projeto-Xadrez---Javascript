@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background: #105e00;
+    background: linear-gradient(0deg, rgb(29, 63, 58) 8%, rgb(18, 184, 43) 81%);
+    place-items: center; 
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+    width: 100%;
+    height: 100px;
+    user-select: none;
+}
+
+nav h1 {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav input {
+    height: 30px;
+    width: auto;
+    border-radius: 8px;
+}
+
+nav button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-size: 14px;
+}
+
+.modos-de-jogo {
+    background-color: rgb(24, 24, 24);
+    margin: 80px;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 60px 80px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+    user-select: none;
+}
+
+#modos-titulo {
+    grid-row: 1 / 1;
+    grid-column: span 3;
+    font-size: 40px;
+}
+
+.modos-de-jogo h1 {
+    grid-row: 2 / 3;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.modos-de-jogo a {
+    text-decoration: none;
+    color: rgb(14, 99, 173);
+    font-size: 18px;
+}

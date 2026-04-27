@@ -1,0 +1,32 @@
+.relogio1, .relogio2 {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio1 {
+    grid-row: span 1;
+    grid-column: 2 / 3;
+}
+
+.relogio2 {
+    grid-row: 4 / 4;
+    grid-column: 2 / 3;
+}
+
+.relogio1, .relogio2 {
+    font-family: 'Roboto';
+    color: aliceblue;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.alerta {
+    color: rgb(197, 31, 31);
+}
