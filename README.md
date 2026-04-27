@@ -5,7 +5,7 @@ Este é um projeto de xadrez desenvolvido em JavaScript com foco em lógica de j
 🚀 Funcionalidades
 
 * Tabuleiro de xadrez funcional
-* Movimentação das peças com regras básicas implementadas
+* Movimentação completa das peças 
 * Sistema de turnos
 * Detecção de algumas situações de jogo
 * Bot integrado para jogar contra o usuário
