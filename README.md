@@ -1,47 +1,105 @@
-♟️ Projeto de Xadrez em JavaScript
+# ♟️ Jogo de Xadrez em JavaScript
 
-⚠️⚠️⚠️ ATENÇÃO! Esse jogo só vai funcionar utilizando a extensão so live server no VScode!
+Projeto de xadrez desenvolvido com **JavaScript puro (Vanilla JS)**, com foco em lógica de jogo, manipulação de estado e implementação de um bot para partidas contra o computador.
 
-Este é um projeto de xadrez desenvolvido em JavaScript com foco em lógica de jogo, interatividade e implementação de um bot para partidas contra o computador.
+---
 
-🚀 Funcionalidades
+## 📌 Sobre o projeto
 
-* Tabuleiro de xadrez funcional
-* Movimentação completa das peças 
-* Sistema de turnos
-* Detecção de algumas situações de jogo
-* Bot integrado para jogar contra o usuário
+Este projeto simula uma partida de xadrez funcional diretamente no navegador, permitindo jogar contra outro jogador local ou contra um bot.
 
-🤖 Bot (IA)
+O desenvolvimento foi focado principalmente em:
+- Lógica de movimentação das peças
+- Regras do jogo
+- Controle de turnos
+- Estruturação de um sistema de IA básica
 
-O projeto conta com um bot capaz de jogar partidas de xadrez em um nível iniciante/intermediário (cerca de 800 a 1000 de Elo).
+---
 
-⚠️ O bot ainda está em desenvolvimento e pode apresentar limitações ou comportamentos inconsistentes.
+## 🚀 Funcionalidades
 
-⚠️ Status do Projeto
+- ♟️ Tabuleiro de xadrez funcional  
+- 🔁 Sistema de turnos  
+- ♜ Movimentação das peças baseada nas regras do jogo  
+- ⚠️ Detecção de algumas situações de jogo (como cheque, dependendo da implementação atual)  
+- 🤖 Modo contra bot  
+- 👥 Modo local (jogador vs jogador no mesmo dispositivo)  
 
-Este projeto **ainda não está completo**. Algumas funcionalidades podem estar ausentes ou em desenvolvimento, incluindo:
+---
 
-* Regras não implmentadas: regra dos 50 lances e empate por repetição.
-* Melhorias na inteligência artificial
-* Refinamento da interface
+## 🤖 Bot (IA)
 
-🌐 Modo Online
+O projeto conta com um bot capaz de jogar partidas em um nível **iniciante/intermediário** (aproximadamente **800–1000 de Elo**).
+
+⚠️ O bot ainda está em desenvolvimento e pode:
+- Cometer erros simples  
+- Não avaliar posições de forma ideal  
+- Ter comportamento inconsistente em algumas situações  
+
+---
+
+## ⚠️ Status do projeto
+
+🚧 Este projeto **ainda não está finalizado**.
+
+Algumas funcionalidades não foram implementadas ou estão incompletas:
+
+- Regra dos 50 lances  
+- Empate por repetição  
+- Melhorias na IA  
+- Refinamentos na interface  
+
+---
+
+## 🌐 Modo online
 
 O modo online **não foi desenvolvido**.
 
-Além disso, **não há planos imediatos para implementação dessa funcionalidade**, então o projeto está focado apenas em partidas locais (jogador vs bot ou jogador vs jogador no mesmo dispositivo).
+No momento, **não há planos imediatos para implementação**, mantendo o foco em partidas locais.
 
-🛠️ Tecnologias Utilizadas
+---
 
-* JavaScript
-* HTML
-* CSS
+## 🛠️ Tecnologias utilizadas
 
-📌 Objetivo
+- HTML  
+- CSS  
+- JavaScript (Vanilla JS)  
 
-O principal objetivo deste projeto é praticar lógica de programação, manipulação de estado e construção de sistemas interativos, além de servir como base para evoluções futuras.
+---
 
-📄 Observações
+## ▶️ Como executar
 
-Este projeto está em constante evolução e foi desenvolvido como parte de aprendizado e prática. Sugestões e melhorias são sempre bem-vindas.
+⚠️ **Importante:**  
+Este projeto precisa ser executado com um servidor local.
+
+### ✔️ Opção recomendada:
+Utilize a extensão **Live Server** no VS Code.
+
+1. Instale a extensão Live Server  
+2. Clique com o botão direito no `index.html`  
+3. Selecione **"Open with Live Server"**
+
+---
+
+## 🎯 Objetivo
+
+O principal objetivo deste projeto é:
+
+- Praticar lógica de programação avançada  
+- Trabalhar com manipulação de estado complexo  
+- Desenvolver sistemas interativos  
+- Criar uma base para evolução futura (IA mais avançada, novas regras, etc.)  
+
+---
+
+## 📄 Observações
+
+Este projeto foi desenvolvido com fins de estudo e prática, e continua em evolução.
+
+Sugestões, melhorias e feedbacks são sempre bem-vindos.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Vinícius Caetano**
