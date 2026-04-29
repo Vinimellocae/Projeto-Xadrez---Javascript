@@ -1,5 +1,7 @@
 ♟️ Projeto de Xadrez em JavaScript
 
+⚠️⚠️⚠️ ATENÇÃO! Esse jogo só vai funcionar utilizando a extensão so live server no VScode!
+
 Este é um projeto de xadrez desenvolvido em JavaScript com foco em lógica de jogo, interatividade e implementação de um bot para partidas contra o computador.
 
 🚀 Funcionalidades
